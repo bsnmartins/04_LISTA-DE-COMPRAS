@@ -76,3 +76,124 @@ body {
     width: 16px;
   }
 }
+
+h1 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.input-item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 44px;
+  gap: 16px;
+
+  & input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    border: 2px solid var(--border-primary);
+    color: var(--content-tertiary);
+    font-size: 16px;
+     
+  }
+
+  & button{
+    width: 200px;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--color-brand);
+    color: var(--always-white);
+    cursor: pointer;
+
+    &:hover{
+      background-color: var(--color-brand-hover);
+    }
+  }
+}
+
+
+
+& input:hover {
+  border: 2px solid var(--border-secondary);
+}
+
+& input:focus {
+  border: 2px solid var(--color-brand);
+  outline: none;
+  color: var(--content-primary);
+}
+
+.list-wrapper{
+  padding-top: 40px;
+}
+.item {
+  background-color: var(--background-secondary);
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: var(--fw-medium);
+  line-height: 20px;
+  display: flex;
+  position: relative;
+  align-items: center;
+
+  
+  input[type="checkbox"]{
+    appearance: none;
+    margin-right: 12px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    border: 1px solid var(--border-primary);
+    border-radius: 6px;
+    &:hover{
+      border: 2px solid var(--border-secondary);
+    }
+  }
+
+  input[type="checkbox"]:checked{
+    appearance: none;
+    width: 16px;
+    height: 16px; 
+    border: none;
+    background-image:url(../assets/check-selected.svg);
+  }
+
+  & img {
+    position: absolute;
+    right: 20px;
+    align-self: center;
+    cursor: pointer;
+
+  }
+  
+}
+
+li {
+  list-style: none;
+  margin-bottom: 12px;
+
+}
+
+.remove {
+  background-color: var(--color-danger);
+  color: var(--always-white);
+  padding: 12px;
+  border-radius: 12px;
+  display: flex;
+  gap: 8px;
+  position: relative;
+  margin-top: 36px;
+  margin-bottom: 137px;
+}
+
+.x{
+position: absolute;
+right: 20px;
+}
+
+footer {
+  display: none;
+}
