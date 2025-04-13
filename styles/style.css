@@ -130,7 +130,7 @@ h1 {
 }
 .item {
   background-color: var(--background-secondary);
-  padding: 10px;
+  padding: 15px;
   border-radius: 12px;
   font-size: 16px;
   font-weight: var(--fw-medium);
@@ -194,6 +194,29 @@ position: absolute;
 right: 20px;
 }
 
-footer {
+/* footer {
   display: none;
+} */
+
+@media (max-width:800px) {
+  body {
+    width: 320px;
+  }
+  /* .logo {
+    display: none;
+  } */
+
+  .title {
+    margin-top: 30px;
+  }
+
+  .input-item {
+    flex-direction: column;
+    
+    & button{
+      width: 100%;
+      height: 44px;
+    }
+  }
+  
 }
