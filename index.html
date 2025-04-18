@@ -20,38 +20,21 @@
     </div>
     <h1>Compras da semana</h1>
   </section>
-
+  
   <div class="input-item">
-    	<input type="text" placeholder="Adicione um novo item">
-      <button>Adicionar item</button>
+    	<input class="inputProduct" type="text" placeholder="Adicione um novo item">
+      <button class="buttonSubmit" type="submit">Adicionar item</button>
   </div>
+
 
   <div class="list-wrapper">
     <ul class="list">
 
-   <li class="item">
-      <input type="checkbox">Pão de forma
-      <img src="./assets/trash.svg" alt="">
-    </li>
 
-    <li class="item">
-      <input type="checkbox">Café preto
-      <img src="./assets/trash.svg" alt="">
-    </li>
-
-    <li class="item">
-      <input type="checkbox">Laranja
-      <img src="./assets/trash.svg" alt="">
-    </li>
-    
-    <li class="item">
-      <input type="checkbox">Bolacha
-      <img src="./assets/trash.svg" alt="">
-    </li> 
     </ul>
 
     <footer>
-      <div class="remove">
+      <div class="remove" style="display:none">
         <img src="./assets/warning.svg" alt="">
         <span>O item foi removido da lista</span>
         <img class="x" src="./assets/delete.svg" alt="">
@@ -59,6 +42,6 @@
     </footer>
   </div>
 
-  
+  <script src="./script/script.js"></script>
 </body>
 </html>
